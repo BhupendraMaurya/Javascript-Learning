@@ -1,6 +1,8 @@
 let button = document.querySelector("#id4");
 let currMode = "light";
 
+console.log("Hello events how are you");
+
 button.addEventListener("click", () => {
     if(currMode === "light"){
         currMode = "dark";
