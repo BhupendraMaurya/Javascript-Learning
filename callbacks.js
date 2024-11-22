@@ -1,12 +1,17 @@
-console.log("before");
-
-// function a(){
-//     console.log("Hello callback, how are you");
+// function sum(a,b){
+//     console.log("Addition of both these tao")
+//     console.log(a+b);
 // }
 
-setTimeout(() =>{
-    console.log("Hello callbacks");
-}, 5000);
+// function calculator(a,b,sumCallback){
+//     sumCallback(a,b);
+// }
 
-console.log("After");
+// calculator(3,5, sum);
+
+const hello = () =>{
+    console.log("Hello constant");
+}
+
+setTimeout(hello, 3000);
 

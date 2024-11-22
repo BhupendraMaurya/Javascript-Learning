@@ -32,19 +32,29 @@
 //     });
 // }
 
-const getPromise = () => {
-    return new Promise((resolve, reject) => {
-        console.log("I am a promise");
-        // resolve("Promise success:");
-        reject("Error occured in my promise");
-    });
-};
+// const getPromise = () => {
+//     return new Promise((resolve, reject) => {
+//         console.log("I am a promise");
+//         // resolve("Promise success:");
+//         reject("Error occured in my promise");
+//     });
+// };
 
-let promise = getPromise();
-promise.then((res) => {
-    console.log("Promise fulfilled:", res);
-});
+// let promise = getPromise();
+// promise.then((res) => {
+//     console.log("Promise fulfilled:", res);
+// });
 
-promise.catch((err) => {
-    console.log("Rejected", err);
-});
+// promise.catch((err) => {
+//     console.log("Rejected", err);
+// });
+
+// 22-11-2024
+console.log("Learning Promises");
+let promise = new Promise((resolve, reject) => {
+    console.log("I am a promise");
+    
+    resolve("Error has been resolved");
+    // reject("Some error");
+})
+
