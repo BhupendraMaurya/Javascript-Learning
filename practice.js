@@ -223,32 +223,32 @@
 
 
 // Learning Functions
-console.log("Functions");
+// console.log("Functions");
 
-function sum(a, b){
-    return a+b;
-}
+// function sum(a, b){
+//     return a+b;
+// }
 
-let output = sum(5,5);
-console.log(output);
+// let output = sum(5,5);
+// console.log(output);
 
-// Making and learning an arrow function
-const val = (a,b) => { return a+b; };
+// // Making and learning an arrow function
+// const val = (a,b) => { return a+b; };
 
-console.log(val(3,4));
+// console.log(val(3,4));
 
-const val2 = () => { 
-    console.log("Hello arrow function");
-};
-val2();
+// const val2 = () => { 
+//     console.log("Hello arrow function");
+// };
+// val2();
 
-// making a function with default arguments
+// // making a function with default arguments
 
-function hello(name = "Bhupendra", greetings = "Hi"){
-    return `${greetings}, ${name}!`;
-}
+// function hello(name = "Bhupendra", greetings = "Hi"){
+//     return `${greetings}, ${name}!`;
+// }
 
-// calling the function with different arguments
-console.log(hello());
-console.log(hello("Raja"));
-console.log(hello("how are you", "Dharmendra"));
+// // calling the function with different arguments
+// console.log(hello());
+// console.log(hello("Raja"));
+// console.log(hello("how are you", "Dharmendra"));
