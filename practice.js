@@ -127,8 +127,8 @@
 
 // console.log(arr[0][0]);
 
-let arr1 = [1,2,3,4,5];
-let arr2 = [2,3,4,5,6];
+// let arr1 = [1,2,3,4,5];
+// let arr2 = [2,3,4,5,6];
 
 // let arr3 = [];
 // console.log(arr3);
@@ -149,3 +149,74 @@ let arr2 = [2,3,4,5,6];
 
 // let mergedArray = mergeArrays(arr1, arr2);
 // console.log(mergedArray);
+
+const car = {
+    brand : "mercedese",
+    model : "Sports",
+    year : 2013
+
+    
+};
+console.log(car);
+// creating a new property in object
+car.cost = 34555;
+console.log(car);
+console.log(car.brand);
+console.log(typeof(car));
+
+// deleting a property in object
+delete car.year;
+console.log(car);
+
+// using for - in method 
+for(let val in car){
+    console.log(val +" : "+ car[val]);
+}
+
+// using Object.keys()
+
+for(let key of Object.keys(car)){
+    console.log(key +" : "+ car[key]);
+}
+
+// using object.entries()
+console.log("USing entries()");
+for(let [key,value] of Object.entries(car)){
+    console.log(key+" : " + value);
+}
+
+// using object.values();
+console.log("Using values()");
+for(let value of Object.values(car)){
+    console.log(value);
+}
+
+
+//==================
+const person = {
+    fullname1 : "Bhupendra maurya",
+    age : 23,
+
+    val : function fullName2(){
+        return this.fullname1;
+    }
+    
+};
+
+for(let key in person){
+    console.log(person[key]);
+}
+
+console.log(person.val());
+
+// Copy an object using the spread operator and modify a property in the new object.
+
+const person2 = {
+    name : "Bhupendra",
+    age : 23,
+    country : "USA"
+};
+
+const updatedPerson = {...person, age : 30};
+console.log(person);
+console.log(updatedPerson);
