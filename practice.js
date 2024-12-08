@@ -252,3 +252,46 @@
 // console.log(hello());
 // console.log(hello("Raja"));
 // console.log(hello("how are you", "Dharmendra"));
+
+// Closures
+function closure(){
+    let x = 56;
+    function add(){
+        x = x + 45;
+        console.log(x);
+    }
+
+    return add;
+}
+
+let value = closure();
+value();
+
+value();
+
+function createCounter(){
+    let count = 0;
+
+    return function (){
+        count++;
+        return count;
+    };
+}
+
+const counter = createCounter();
+console.log(counter());
+console.log(counter());
+
+
+function closure (){
+    let count = 0;
+    function hello(){
+        console.log("Hello private bro");
+    }
+
+    hello();
+}
+
+console.log(count)
+
+closure();
