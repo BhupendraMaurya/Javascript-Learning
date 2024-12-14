@@ -174,37 +174,38 @@ console.log(ans3);
 // Find all numbers greater than 10 using filter.
 
 // without using the filter()
-let arr2 = []
-for(let i=0;i<arr.length;i++){
-    if(arr[i] > 10){
-        arr2.push(arr[i]);
-    }
-}
-console.log(arr2);
+// let arr2 = []
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i] > 10){
+//         arr2.push(arr[i]);
+//     }
+// }
+// console.log(arr2);
 
-// using the filter();
+// // using the filter();
 
-function greaterThanTen(x){
-    return x > 10;
-}
+// function greaterThanTen(x){
+//     return x > 10;
+// }
 
-let result = arr.filter(greaterThanTen)
-console.log(result)
+// let result = arr.filter(greaterThanTen)
+// console.log(result)
 
-// using the arrow function for the above function
-let result2 = arr.filter((x) => x > 10)
-console.log(result2);
+// // using the arrow function for the above function
+// let result2 = arr.filter((x) => x > 10)
+// console.log(result2);
 
 
-// Sort an array of numbers in ascending and descending order.
-let number = [1,4,2,5,2,3,7,5];
-console.log(number)
-// custom logic to sort in ascending order
-number.sort((a,b) => a - b);
+// // Sort an array of numbers in ascending and descending order.
+// let number = [1,4,2,5,2,3,7,5];
+// console.log(number)
+// // custom logic to sort in ascending order
+// number.sort((a,b) => a - b);
 
-console.log(number);
+// console.log(number);
 
-// logic to sort in descending order
-number.sort((a,b) => b - a);
-console.log(number);
+// // logic to sort in descending order
+// number.sort((a,b) => b - a);
+// console.log(number);
+
 
