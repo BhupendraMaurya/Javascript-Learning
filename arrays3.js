@@ -2,20 +2,38 @@ let arr = [1,2,3,3,4,5,5];
 console.log(arr);
 
 
-console.log(arr[0], " ", arr[3], " ", arr[arr.length-1]);
+// console.log(arr[0], " ", arr[3], " ", arr[arr.length-1]);
 
-arr.unshift(11);
-console.log("Adding in front: " + arr);
+// arr.unshift(11);
+// console.log("Adding in front: " + arr);
 
-arr.push(333);
-console.log("Adding in last: " + arr);
+// arr.push(333);
+// console.log("Adding in last: " + arr);
 
-arr.shift();
-console.log("Removing from front: " + arr);
+// arr.shift();
+// console.log("Removing from front: " + arr);
 
-arr.pop();
-console.log("removing from back: "+arr);
+// arr.pop();
+// console.log("removing from back: "+arr);
 
-console.log(arr.length);
+// console.log(arr.length);
 
+function logging(arr){
+    for(let i of arr){
+        console.log(i);
+    }
+}
+logging(arr);
+
+console.log("Using for each");
+
+arr.forEach(function (val){
+    console.log(val);
+});
+
+function hello(val){
+    console.log(val);
+}
+
+arr.forEach(hello);
 
